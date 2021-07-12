@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-
 public class AddressBookMain {
 
 	public static void main(String[] args) {
@@ -46,6 +45,15 @@ public class AddressBookMain {
 
 				person.add(address);
 
+				break;
+
+			// View all existing person
+			case 2:
+
+				for (ContactDetails addPerson : person) {
+					System.out.println(addPerson);
+				}
+				System.out.println("\n\n");
 				break;
 
 			}

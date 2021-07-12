@@ -1,18 +1,13 @@
 package com.collection;
 
-
-
-
 public class ContactDetails {
 	private String firstName;
 	private String lastName;
 	private String city;
 	private String state;
-	private int zip; 
-	private long phoneNumber;   
+	private int zip;
+	private long phoneNumber;
 	private String email;
-	
-
 
 	public String getFirstName() {
 		return firstName;
@@ -75,9 +70,5 @@ public class ContactDetails {
 		return "AddressBook [firstName=" + firstName + ", lastName=" + lastName + ", city=" + city + ", state=" + state
 				+ ", zip=" + zip + ", phoneNumber=" + phoneNumber + ", email=" + email + "]";
 	}
-
-
-
-
 
 }
