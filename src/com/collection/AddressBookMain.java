@@ -55,6 +55,24 @@ public class AddressBookMain {
 				}
 				System.out.println("\n\n");
 				break;
+			// edit existing contact
+			case 3:
+				System.out.println("Edit record");
+				System.out.println("Enter name to edit:");
+
+				String city = sc.next();
+
+				for (int i = 0; i < person.size(); i++) {
+					address = person.get(i);
+					if (city.equals(address.getFirstName())) {
+						System.out.println("Enter new city:");
+						address.setCity(sc.next());
+						System.out.println("List After edit is" + person.toString());
+					}
+
+				}
+
+				break;
 
 			}
 		}
