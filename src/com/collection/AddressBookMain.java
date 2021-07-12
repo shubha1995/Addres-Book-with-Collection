@@ -73,6 +73,23 @@ public class AddressBookMain {
 				}
 
 				break;
+			// Remove person
+			case 4:
+				System.out.println("remove record");
+				System.out.println("Enter name to remove:");
+				for (int i = 0; i < person.size(); i++) {
+					address = person.get(i);
+					if (sc.next().equals(address.getFirstName())) {
+						person.remove(address);
+						System.out.println("List After removing" + person.toString());
+					} else {
+						System.out.println("User not found");
+					}
+				}
+				break;
+
+			case 5:
+				return;
 
 			}
 		}
