@@ -71,4 +71,9 @@ public class ContactDetails {
 				+ ", zip=" + zip + ", phoneNumber=" + phoneNumber + ", email=" + email + "]";
 	}
 
+	public String getContactDetailsCode() {
+
+		return null;
+	}
+
 }
